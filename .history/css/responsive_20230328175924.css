@@ -1,0 +1,22 @@
+/*RESPONSIVE*/
+
+@media(max-width:576px) {
+    nav ul li {
+        display: none;
+    }
+    .header-block img {
+        width: 80%;
+        position: absolute;
+        left: 12%;
+        top: 30%;
+    }
+    .header-block .text {
+        position: absolute;
+        bottom: 10%;
+        left: 15;
+    }
+    section .filter-card {
+        max-width: 700px;
+        min-width: ;
+    }
+}

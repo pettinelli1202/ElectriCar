@@ -1,0 +1,11 @@
+/*RESPONSIVE*/
+
+@media(max-width:576px) {
+    nav ul li {
+        display: none;
+    }
+    .header-block img {
+        width: 70%;
+        position: absolute;
+    }
+}
