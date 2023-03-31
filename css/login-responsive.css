@@ -1,0 +1,62 @@
+@media(max-width:576px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        width: 100%;
+        right: 40px;
+        bottom: 22rem;
+        position: absolute;
+        font-size: 12px;
+    }
+    .header-block img {
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        top: 65%;
+    }
+    .header-block .text {
+        display: none;
+    }
+    .box {
+        width: 100vw;
+        height: 50vh;
+        background: white;
+        padding: 5px;
+        color: black;
+        font-size: 12px;
+    }
+    fieldset {
+        border: 3px solid gainsboro;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    legend {
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .input-box {
+        padding: 10px;
+        position: relative;
+    }
+    .input-user {
+        padding: 5px;
+        background: rgb(243, 243, 243);
+        border: 2px solid gainsboro;
+        outline: none;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    button {
+        background: #fb8500;
+        border: none;
+        border-radius: 1rem;
+        padding: 10px;
+        width: 20rem;
+        margin: 1rem;
+        font-weight: bold;
+    }
+}

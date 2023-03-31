@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #023047 0%, #023047 23%, #fb8500 23%, #fb8500 0%);
+}
+
+nav p {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    color: #023047;
+    font-size: 24px;
+}
+
+.header-block img {
+    width: 45%;
+    position: absolute;
+    left: 50%;
+    top: 42%;
+}
+
+.header-block .text {
+    text-align: left;
+    position: absolute;
+    bottom: 60%;
+    left: 70%;
+}
+
+.header-block .text h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-block .text p {
+    font-size: 20px;
+    max-width: 280px;
+    color: white;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.4s;
+}
+
+
+/*FORM*/
+
+.box {
+    width: 530px;
+    height: 100vh;
+    background: white;
+    padding: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+fieldset {
+    border: 3px solid gainsboro;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+legend {
+    color: rgb(26, 26, 26);
+    padding: 10px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.input-box {
+    padding: 10px;
+    position: relative;
+}
+
+.input-user {
+    padding: 5px;
+    background: rgb(243, 243, 243);
+    border: 2px solid gainsboro;
+    outline: none;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+button {
+    background: #fb8500;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+    width: 22rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #023047;
+    color: white;
+    transition: 0.5s;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #fb8500;
+    text-decoration: underline;
+}
+
+.register {
+    text-align: center;
+    margin: 1rem;
+}
+
+.login {
+    padding: 10px;
+    text-align: center;
+}
