@@ -1,0 +1,135 @@
+@media(max-width:450px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        width: 100%;
+        right: 40px;
+        bottom: 22rem;
+        position: absolute;
+        font-size: 12px;
+    }
+    .header-block img {
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        top: 65%;
+    }
+    .header-block .text {
+        display: none;
+    }
+    .box {
+        width: 100vw;
+        height: 50vh;
+        background: white;
+        padding: 5px;
+        color: black;
+        font-size: 12px;
+    }
+    fieldset {
+        width: 100%;
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    legend {
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .input-box {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+    }
+    .input-user {
+        padding: 5px;
+        background: rgb(243, 243, 243);
+        border: 2px solid gainsboro;
+        outline: none;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    button {
+        background: #fb8500;
+        border: none;
+        border-radius: 1rem;
+        padding: 10px;
+        width: 90%;
+        font-weight: bold;
+    }
+}
+
+@media(min-width:600px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    nav {
+        display: none;
+    }
+    .box {
+        width: 100vw;
+        height: 50vh;
+        background: white;
+        padding: 5px;
+        color: black;
+        font-size: 12px;
+    }
+    .header-block img {
+        width: 50%;
+        position: absolute;
+        left: 22%;
+        top: 65%;
+    }
+    .header-block .text {
+        display: none;
+    }
+    button {
+        background: #fb8500;
+        border: none;
+        border-radius: 1rem;
+        margin-left: 4.15rem;
+        padding: 10px;
+        width: 80%;
+        font-weight: bold;
+    }
+    fieldset {
+        width: 100%;
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .input-box {
+        width: 90%;
+        margin-left: 2.20rem;
+        padding: 10px;
+        position: relative;
+    }
+}
+
+@media(min-width:1024px) {
+    .header-block img {
+        width: 50%;
+        position: absolute;
+        left: 22%;
+        top: 55%;
+    }
+    button {
+        background: #fb8500;
+        border: none;
+        border-radius: 1rem;
+        margin-left: 6rem;
+        padding: 10px;
+        width: 80%;
+        font-weight: bold;
+    }
+    .input-box {
+        width: 93%;
+        margin-left: 2.20rem;
+        padding: 10px;
+        position: relative;
+    }
+}
