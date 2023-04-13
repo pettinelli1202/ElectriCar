@@ -1,6 +1,9 @@
 /*RESPONSIVE*/
 
-@media(max-width:576px) {
+@media(max-width:450px) {
+    .content p {
+        font-size: 18px;
+    }
     nav ul li {
         display: none;
     }
@@ -16,12 +19,12 @@
         left: 20%;
     }
     section .filter-card {
-        width: 360px;
+        width: 300px;
         padding: 0px 10px;
     }
     .search-input {
-        max-width: 600px;
-        min-width: 240px;
+        max-width: 300px;
+        min-width: 140px;
     }
     .search-button {
         max-width: 150px;
@@ -69,6 +72,6 @@
     }
     .footer-link {
         flex-direction: column;
-        padding: 10%;
+        padding: 5%;
     }
 }
