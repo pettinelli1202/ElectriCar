@@ -1,19 +1,9 @@
-@media(max-width:450px) {
-    body {
-        overflow-x: hidden;
-    }
-    nav {
-        width: 100%;
-        right: 40px;
-        bottom: 22rem;
-        position: absolute;
-        font-size: 12px;
-    }
+@media(max-width:480px) {
     .header-block img {
         width: 70%;
         position: absolute;
         left: 10%;
-        top: 65%;
+        top: 45%;
     }
     .header-block .text {
         display: none;
@@ -45,24 +35,16 @@
         position: relative;
     }
     .input-user {
-        padding: 5px;
+        padding: 5px 5px 0;
         background: rgb(243, 243, 243);
         border: 2px solid gainsboro;
         outline: none;
-        width: 100%;
         letter-spacing: 2px;
-    }
-    button {
-        background: #fb8500;
-        border: none;
-        border-radius: 1rem;
-        padding: 10px;
-        width: 90%;
-        font-weight: bold;
+        width: 100%;
     }
 }
 
-@media(min-width:600px) {
+@media(max-width:1024px) {
     body {
         overflow-x: hidden;
         overflow-y: hidden;
@@ -82,18 +64,18 @@
         width: 50%;
         position: absolute;
         left: 22%;
-        top: 65%;
+        top: 55%;
     }
     .header-block .text {
         display: none;
     }
     button {
-        background: #fb8500;
+        background: #14FFEC;
         border: none;
         border-radius: 1rem;
-        margin-left: 4.15rem;
+        margin-left: 3rem;
         padding: 10px;
-        width: 80%;
+        width: 85%;
         font-weight: bold;
     }
     fieldset {
@@ -104,30 +86,6 @@
     }
     .input-box {
         width: 90%;
-        margin-left: 2.20rem;
-        padding: 10px;
-        position: relative;
-    }
-}
-
-@media(min-width:1024px) {
-    .header-block img {
-        width: 50%;
-        position: absolute;
-        left: 22%;
-        top: 55%;
-    }
-    button {
-        background: #fb8500;
-        border: none;
-        border-radius: 1rem;
-        margin-left: 6rem;
-        padding: 10px;
-        width: 80%;
-        font-weight: bold;
-    }
-    .input-box {
-        width: 93%;
         margin-left: 2.20rem;
         padding: 10px;
         position: relative;

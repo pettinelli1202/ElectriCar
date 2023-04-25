@@ -9,14 +9,14 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to top, #023047 0%, #023047 23%, #fb8500 23%, #fb8500 0%);
+    background: linear-gradient(to top, #212121 0%, #212121 23%, #14FFEC 23%, #14FFEC 0%);
 }
 
 nav p {
     position: absolute;
     top: 10%;
     left: 45%;
-    color: #023047;
+    color: #212121;
     font-size: 24px;
 }
 
@@ -35,7 +35,7 @@ nav p {
 }
 
 .header-block .text h2 {
-    color: white;
+    color: #212121;
     margin-bottom: 20px;
     text-align: right;
     transform: translateX(-20px);
@@ -47,7 +47,7 @@ nav p {
 .header-block .text p {
     font-size: 20px;
     max-width: 280px;
-    color: white;
+    color: #212121;
     text-align: right;
     transform: translateX(-20px);
     transition: transform 0.4s;
@@ -68,7 +68,7 @@ nav p {
 fieldset {
     border: 3px solid gainsboro;
     border-radius: 5px;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 legend {
@@ -93,17 +93,17 @@ legend {
 }
 
 button {
-    background: #fb8500;
+    background: #14FFEC;
     border: none;
     border-radius: 1rem;
     padding: 10px;
-    width: 22.50rem;
+    width: 93%;
     margin: 1rem;
     font-weight: bold;
 }
 
 button:hover {
-    background: #023047;
+    background: #212121;
     color: white;
     transition: 0.5s;
 }
@@ -113,16 +113,16 @@ a {
 }
 
 a:hover {
-    color: #fb8500;
+    color: #14FFEC;
     text-decoration: underline;
 }
 
 .register {
-    text-align: center;
+    text-align: end;
     margin: 1rem;
 }
 
 .login {
     padding: 10px;
-    text-align: center;
+    text-align: end;
 }
