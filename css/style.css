@@ -98,11 +98,24 @@ nav ul button:hover {
     padding: 10px;
 }
 
-.header-block img {
+.car-img-header {
     width: 55%;
     position: absolute;
     left: 40%;
     bottom: 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 .header-block .text {
@@ -451,17 +464,21 @@ footer .main {
 .footer-social a {
     color: #212121;
     padding: 5px;
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 5px;
 }
 
 .footer-social a:hover {
+    color: #000000;
     text-align: center;
     padding: 5px;
+    border: 2px solid #212121;
     border-radius: 50%;
-    background: #1decdb;
+    background: #14FFEC;
+    transition: 0.25s;
+    transform: scale(1.5);
 }
 
 .footer-social h4 {
@@ -492,7 +509,7 @@ footer .last {
     justify-content: center;
     align-items: center;
     background-color: white;
-    transition: opacity 0.75s, visibility 0.75s;
+    transition: opacity 3s, visibility 1s;
 }
 
 .loader-hidden {

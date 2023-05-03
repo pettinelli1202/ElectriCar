@@ -1,128 +1,412 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-body {
-    height: 100vh;
-    background: linear-gradient(to top, #212121 0%, #212121 23%, #14FFEC 23%, #14FFEC 0%);
-}
-
-nav p {
-    position: absolute;
-    top: 10%;
-    left: 45%;
-    color: #212121;
-    font-size: 24px;
-}
-
-.header-block img {
-    width: 45%;
-    position: absolute;
-    left: 50%;
-    top: 42%;
-}
-
-.header-block .text {
-    text-align: left;
-    position: absolute;
-    bottom: 60%;
-    left: 70%;
-}
-
-.header-block .text h2 {
-    color: #212121;
-    margin-bottom: 20px;
-    text-align: right;
-    transform: translateX(-20px);
-    transition: transform 0.5s;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.header-block .text p {
-    font-size: 20px;
-    max-width: 280px;
-    color: #212121;
-    text-align: right;
-    transform: translateX(-20px);
-    transition: transform 0.4s;
-}
-
-
-/*FORM*/
-
-.box {
-    width: 530px;
-    height: 100vh;
-    background: white;
-    padding: 15px;
-    color: black;
-    font-size: 18px;
-}
-
-fieldset {
-    border: 3px solid gainsboro;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-legend {
-    color: rgb(26, 26, 26);
-    padding: 10px;
-    text-align: left;
-    font-size: 2rem;
-}
-
-.input-box {
-    padding: 10px;
-    position: relative;
-}
-
-.input-user {
-    padding: 5px;
-    background: rgb(243, 243, 243);
-    border: 2px solid gainsboro;
-    outline: none;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-button {
-    background: #14FFEC;
-    border: none;
-    border-radius: 1rem;
-    padding: 10px;
-    width: 93%;
-    margin: 1rem;
-    font-weight: bold;
-}
-
-button:hover {
-    background: #212121;
-    color: white;
-    transition: 0.5s;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: #14FFEC;
-    text-decoration: underline;
-}
-
-.register {
-    text-align: end;
-    margin: 1rem;
-}
-
-.login {
-    padding: 10px;
-    text-align: end;
-}
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        height: 100vh;
+        background: linear-gradient(to top, #212121 0%, #212121 23%, #14FFEC 23%, #14FFEC 0%);
+    }
+    
+    nav p {
+        position: absolute;
+        top: 10%;
+        left: 45%;
+        color: #212121;
+        font-size: 24px;
+    }
+    
+    .header-block img {
+        width: 45%;
+        position: absolute;
+        left: 50%;
+        top: 42%;
+    }
+    
+    .header-block .text {
+        text-align: left;
+        position: absolute;
+        bottom: 60%;
+        left: 70%;
+    }
+    
+    .header-block .text h2 {
+        color: #212121;
+        margin-bottom: 20px;
+        text-align: right;
+        transform: translateX(-20px);
+        transition: transform 0.5s;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .header-block .text p {
+        font-size: 20px;
+        max-width: 280px;
+        color: #212121;
+        text-align: right;
+        transform: translateX(-20px);
+        transition: transform 0.4s;
+    }
+    /*FORM*/
+    
+    .box {
+        width: 530px;
+        height: 100vh;
+        background: white;
+        padding: 15px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    fieldset {
+        border: 3px solid gainsboro;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    
+    legend {
+        color: rgb(26, 26, 26);
+        padding: 10px;
+        text-align: left;
+        font-size: 2rem;
+    }
+    
+    .input-box {
+        padding: 10px;
+        position: relative;
+    }
+    
+    .input-user {
+        padding: 5px;
+        background: rgb(243, 243, 243);
+        border: 2px solid gainsboro;
+        outline: none;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    
+    button {
+        background: #14FFEC;
+        border: none;
+        border-radius: 1rem;
+        padding: 10px;
+        width: 93%;
+        margin: 1rem;
+        font-weight: bold;
+    }
+    
+    button:hover {
+        background: #212121;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    a:hover {
+        color: #14FFEC;
+        text-decoration: underline;
+    }
+    
+    .register {
+        text-align: end;
+        margin: 1rem;
+    }
+    
+    .login {
+        padding: 10px;
+        text-align: end;
+    }
+    /*LOADER*/
+    
+    .loader {
+        position: fixed;
+        z-index: 11;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: opacity 15.75s, visibility 1s;
+    }
+    
+    .loader-hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .carAnimation {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        background-color: #14FFEC;
+        border-radius: 50%;
+    }
+    
+    .road {
+        position: absolute;
+        background-color: #171717;
+        border-radius: 20px;
+        height: 5px;
+        width: 220px;
+        top: 220px;
+        left: 40px;
+        overflow: hidden;
+    }
+    
+    .road:before {
+        content: "";
+        position: absolute;
+        background-color: #171717;
+        width: 30px;
+        height: 5px;
+        border-radius: 5px;
+        animation: move 1s linear infinite reverse;
+    }
+    
+    @keyframes move {
+        from {
+            left: -100px;
+        }
+        to {
+            left: 200px;
+        }
+    }
+    
+    .road:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 5px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 27px 0 #333;
+        animation: move 1s linear infinite reverse;
+    }
+    
+    .car {
+        position: absolute;
+        height: 0;
+        width: 140px;
+        border-right: 25px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 70px solid #333;
+        z-index: 2;
+        top: 140px;
+        left: 75px;
+    }
+    
+    .car:before {
+        content: "";
+        position: absolute;
+        background-color: #333;
+        width: 70px;
+        height: 40px;
+        left: 60px;
+        top: 30px;
+    }
+    
+    .car:after {
+        content: "";
+        position: absolute;
+        background-color: #333;
+        width: 10px;
+        height: 35px;
+        border-radius: 10px;
+        left: -22px;
+        top: 20px;
+        transform: rotate(16deg);
+    }
+    
+    .colour {
+        position: absolute;
+        height: 0;
+        width: 125px;
+        border-right: 20px solid transparent;
+        border-left: 17.5px solid transparent;
+        border-bottom: 60px solid #ffffff;
+        top: 5px;
+        left: -12px;
+    }
+    
+    .colour:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60px;
+        height: 30px;
+        left: 60px;
+        top: 30px;
+    }
+    
+    .colour:after {
+        position: absolute;
+        content: "";
+        background-color: #cff8ff;
+        width: 8px;
+        height: 5px;
+        border: 3px solid #333;
+        left: 108px;
+        top: 26px;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .windows {
+        position: absolute;
+        height: 0;
+        width: 90px;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: 28px solid #333;
+        top: 8px;
+        left: 4px;
+    }
+    
+    .windows:before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 70px;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 22px solid #14FFEC;
+        top: 3px;
+        left: -2.5px;
+    }
+    
+    .windows:after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 25px;
+        background-color: #333;
+        left: 45px;
+        box-shadow: -25px 0 #333;
+    }
+    
+    .leftWheel {
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        border: 3px solid #333;
+        background-color: #d3d3d3;
+        border-radius: 30px 30px 0 0;
+        top: 47px;
+        left: -5px;
+    }
+    
+    .rightWheel {
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        border: 3px solid #333;
+        background-color: #d3d3d3;
+        border-radius: 30px 30px 0 0;
+        top: 47px;
+        left: 75px;
+    }
+    
+    .wheel {
+        position: absolute;
+        border-radius: 50%;
+        width: 21px;
+        height: 22px;
+        background-color: #d3d3d3;
+        border: 8px solid #333;
+        box-shadow: inset 5px 5px #f5f3f4;
+        top: 2px;
+        left: 2px;
+        animation: spin .5s infinite linear;
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .clouds {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 35px;
+        height: 10px;
+        border-radius: 20px;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+        box-shadow: 130px 50px rgba(255, 255, 255, 0.9), -100px 20px rgba(255, 255, 255, 0.5);
+        animation: cloud 1.5s linear infinite reverse;
+    }
+    
+    @keyframes cloud {
+        from {
+            left: -150px;
+        }
+        to {
+            left: 400px;
+        }
+    }
+    
+    @keyframes loading {
+        from {
+            transform: rotate(0turn);
+        }
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    
+    .tracking-in-contract-bck-bottom {
+        position: relative;
+        padding: 5px 50px;
+        font-size: 52px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        -webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) reverse both;
+        animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) reverse both;
+    }
+    
+    @-webkit-keyframes tracking-in-contract-bck-bottom {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(400px) translateY(300px);
+            transform: translateZ(400px) translateY(300px);
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes tracking-in-contract-bck-bottom {
+        0% {
+            letter-spacing: 1em;
+            -webkit-transform: translateZ(400px) translateY(300px);
+            transform: translateZ(400px) translateY(300px);
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+            opacity: 1;
+        }
+    }

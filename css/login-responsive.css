@@ -90,4 +90,7 @@
         padding: 10px;
         position: relative;
     }
+    .carAnimation {
+        display: none;
+    }
 }
